@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { SvgIconRegistryService } from 'angular-svg-icon';
 
 @Component({
   selector: 'app-root',
@@ -9,13 +10,17 @@ import { Component } from '@angular/core';
 export class AppComponent {
   public forecasts?: WeatherForecast[];
 
-  constructor(http: HttpClient) {
+  constructor(http: HttpClient, private _registry: SvgIconRegistryService) {
     http.get<WeatherForecast[]>('/weatherforecast').subscribe(result => {
       this.forecasts = result;
     }, error => console.error(error));
   }
 
   title = 'angularapp';
+
+  ngOnInit(){
+    this._registry.loadSvg("/assets/imgVA.svg","vic");
+  }
 }
 
 interface WeatherForecast {

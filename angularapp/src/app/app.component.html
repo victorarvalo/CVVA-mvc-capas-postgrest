@@ -1,4 +1,20 @@
-﻿<h1 id="tableLabel">Weather forecast</h1>
+﻿<div class="toolbar" role="banner">
+    <svg-icon src="vic" [svgStyle]="{ 'width.px':80, 'height.px':80 }" [stretch]="true"></svg-icon>
+    <div class="dropdown">
+        <button type="button" class="btn btn-secondary btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          Menu
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+    </div>
+</div>
+
+<h1 id="tableLabel">Weather forecast</h1>
 
 <p>This component demonstrates fetching data from the server.</p>
 
