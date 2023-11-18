@@ -5,18 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataLayout.PersonalData
+namespace DataLayout.ModalityTraining
 {
-    public class PersonalDataDB
+    public class ModalityTrainingDB
     {
-        public List<PersonalDatum> GetAllPersonalData()
+        public List<Models.ModalityTraining> GetAllModalityTrainig()
         {
             try
             {
-                using (CvdataBaseContext db = new CvdataBaseContext())
+                using(CvdataBaseContext db =  new CvdataBaseContext())
                 {
-                    List<PersonalDatum> data = new List<PersonalDatum>();
-                    data = db.PersonalData.ToList();
+                    List<Models.ModalityTraining> data = new List<Models.ModalityTraining>();
+                    data = db.ModalityTrainings.ToList();
                     return data;
                 }
             }catch (Exception ex)

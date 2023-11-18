@@ -5,18 +5,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataLayout.PersonalData
+namespace DataLayout.EducationData
 {
-    public class PersonalDataDB
+    public class EducationDataDB
     {
-        public List<PersonalDatum> GetAllPersonalData()
+        public List<EducationDatum> GetAllEducationData()
         {
             try
             {
                 using (CvdataBaseContext db = new CvdataBaseContext())
                 {
-                    List<PersonalDatum> data = new List<PersonalDatum>();
-                    data = db.PersonalData.ToList();
+                    List<EducationDatum> data = new List<EducationDatum>();
+                    data = db.EducationData.ToList();
                     return data;
                 }
             }catch (Exception ex)
