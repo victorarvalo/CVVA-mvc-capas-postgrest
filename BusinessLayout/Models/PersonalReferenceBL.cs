@@ -9,7 +9,9 @@ namespace BusinessLayout.Models
     public class PersonalReferenceBL
     {
         public int IdPersonalReference { get; set; }
-
-        public string? DataPersonalReference { get; set; }
+        public string name { get; set; }
+        public string celPhone { get; set; }
+        public string email { get; set; }
+        public string occupation { get; set; }
     }
 }
