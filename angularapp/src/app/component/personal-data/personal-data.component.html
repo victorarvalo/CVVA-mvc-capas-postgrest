@@ -1,1 +1,27 @@
 <p>personal-data works!</p>
+<div class="card">
+    <div class="card-body">
+      <h5 class="titulo">INFORMACIÓN PERSONAL</h5>
+      <table class="table">
+        <tbody>
+        <tr *ngFor="let data of listPersonalData;">
+            <table class="table">
+                <tr>
+                    <td>Nombre: {{data.name}} {{data.lastName}}</td>
+                </tr>
+                <tr>
+                    <td>Fecha de Nacimiento: {{data.bornDate}}</td>
+                </tr>
+                <tr>
+                    <td>Lugar de Nacimiento: {{data.bornPlace}}</td>
+                </tr>
+                <tr>
+                    <td>Edad: {{data.age}}</td>
+                </tr>
+                
+            </table>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
