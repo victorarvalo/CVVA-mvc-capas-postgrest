@@ -1,1 +1,10 @@
-<p>summary works!</p>
+<div class="card">
+    <div class="card-body">
+        <div *ngFor="let data of listSummaryData;">
+            <div class="row"><div class="col text-center"><b>{{data.title}}</b></div></div>
+            <div class="row"><div class="col">{{data.data}}</div></div>
+            <br>
+        </div>
+    </div>    
+</div>    
+      
