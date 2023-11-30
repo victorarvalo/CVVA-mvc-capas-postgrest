@@ -1,1 +1,60 @@
 <p>personal-data works!</p>
+<div class="card">
+    <div class="card-body">
+      <h5 class="titulo text-center">INFORMACIÓN PERSONAL</h5>
+      <table class="table">
+        <tbody>
+        <tr *ngFor="let data of listPersonalData;">
+            <div class="row">
+                <div class="col col-md-4"></div>
+                <div class="col col-md-2">Nombre: </div>
+                <div class="col col-md-4 text-start">{{data.name}} {{data.lastName}}</div>
+                <div class="col col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col col-md-4"></div>
+                <div class="col col-md-2">Edad: </div>
+                <div class="col col-md-4 text-start">{{data.age}}</div>
+                <div class="col col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col col-md-4"></div>
+                <div class="col col-md-2">Fecha de Nacimiento: </div>
+                <div class="col col-md-4 text-start">{{data.bornDate}}</div>
+                <div class="col col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col col-md-4"></div>
+                <div class="col col-md-2">Lugar de Nacimiento: </div>
+                <div class="col col-md-4 text-start">{{data.bornPlace}}</div>
+                <div class="col col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col col-md-4"></div>
+                <div class="col col-md-2">Documento de Identidad: </div>
+                <div class="col col-md-4 text-start">{{data.idDocument}}</div>
+                <div class="col col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col col-md-4"></div>
+                <div class="col col-md-2">Dirección: </div>
+                <div class="col col-md-4 text-start">{{data.address}}</div>
+                <div class="col col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col col-md-4"></div>
+                <div class="col col-md-2">Teléfono: </div>
+                <div class="col col-md-4 text-start">{{data.celPhone}}</div>
+                <div class="col col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col col-md-4"></div>
+                <div class="col col-md-2">Email: </div>
+                <div class="col col-md-4 text-start">{{data.email}}</div>
+                <div class="col col-md-2"></div>
+            </div>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
