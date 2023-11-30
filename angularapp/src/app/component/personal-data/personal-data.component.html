@@ -1,24 +1,35 @@
 <p>personal-data works!</p>
 <div class="card">
     <div class="card-body">
-      <h5 class="titulo">INFORMACIÓN PERSONAL</h5>
+      <h5 class="titulo text-center">INFORMACIÓN PERSONAL</h5>
       <table class="table">
         <tbody>
         <tr *ngFor="let data of listPersonalData;">
             <table class="table">
                 <tr>
-                    <td>Nombre: {{data.name}} {{data.lastName}}</td>
+                    <td class="text-end">Nombre: </td><td>&emsp;{{data.name}} {{data.lastName}}</td>
                 </tr>
                 <tr>
-                    <td>Fecha de Nacimiento: {{data.bornDate}}</td>
+                    <td class="text-end">Edad: </td><td>&emsp;{{data.age}}</td>
                 </tr>
                 <tr>
-                    <td>Lugar de Nacimiento: {{data.bornPlace}}</td>
+                    <td class="text-end">Fecha de Nacimiento: </td><td>&emsp;{{data.bornDate}}</td>
                 </tr>
                 <tr>
-                    <td>Edad: {{data.age}}</td>
+                    <td class="text-end">Lugar de Nacimiento: </td><td>&emsp;{{data.bornPlace}}</td>
                 </tr>
-                
+                <tr>
+                    <td class="text-end">Documento de Identidad: </td><td>&emsp;{{data.idDocument}}</td>
+                </tr>
+                <tr>
+                    <td class="text-end">Dirección: </td><td>&emsp;{{data.address}}</td>
+                </tr>
+                <tr>
+                    <td class="text-end">Teléfono: </td><td>&emsp;{{data.celPhone}}</td>
+                </tr>
+                <tr>
+                    <td class="text-end">Email: </td><td>&emsp;{{data.email}}</td>
+                </tr>
             </table>
         </tr>
         </tbody>
