@@ -1,1 +1,32 @@
-<p>education-data works!</p>
+<div class="card">
+    <div class="card-body">
+      <h5 class="titulo text-center">EDUCACIÓN</h5>
+      <table class="table">
+        <tbody>
+            <tr *ngFor="let data of listEducationData;">
+                <div class="row" style="margin-bottom: 0%;padding: 0%;">
+                    <div class="col col-2"></div>
+                    <div class="col col-8 text-start"><b>{{data.institution}}</b></div>
+                    <div class="col col-2"></div>
+                </div>
+                <div class="row"    style="margin-bottom: 0%;padding: 0%;">
+                    <div class="col col-2"></div>
+                    <div class="col col-8">{{data.title}}</div>
+                    <div class="col col-2"></div>
+                </div>
+                <div class="row" style="margin-top: 0%;padding: 0%;">
+                    <div class="col col-2"></div>
+                    <div class="col col-8 text-start">{{data.finishDate}}</div>
+                    <div class="col col-2"></div>
+                </div>
+                <div class="row" style="margin-bottom: 0%;padding: 0%;">
+                    <div class="col col-2"></div>
+                    <div class="col col-8 text-start">{{data.summary}}</div>
+                    <div class="col col-2"></div>
+                </div>
+                <br>
+            </tr>
+        </tbody>
+      </table>
+    </div>
+</div>  

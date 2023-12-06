@@ -1,1 +1,16 @@
-<p>experience-data works!</p>
+<div class="card">
+    <div class="card-body">
+      <h5 class="titulo text-center">EDUCACIÓN</h5>
+      <table class="table" *ngFor="let data of listExperienceData;">
+        <tr class="fondo"><td>{{data.startDate}} - {{data.finishDate}}</td></tr>
+        <tr class="fondo"><td>&emsp;<b class="fondo">{{data.enterprise}}</b></td></tr>
+        <tr class="fondo"><td>&emsp;Teléfono: {{data.phone}}</td></tr>
+        <tr class="fondo"><td>&emsp;URL: {{data.url}}</td></tr>
+        <tr class="fondo"><td>&emsp;Cargo: {{data.position}}</td></tr>
+        <tr class="fondo"><td>&emsp;{{data.summary}}</td></tr>
+        <tr class="fondo" *ngFor="let detail of data.detailSummary;"><td>&emsp;-{{detail.detail}}</td></tr>
+        <tr class="fondo" *ngIf="data.skills!=null"><td>Logros:</td></tr>
+        <tr class="fondo" *ngFor="let skil of data.skills;"><td>&emsp;-{{skil.skil}}</td></tr>
+      </table>
+    </div>    
+</div>
