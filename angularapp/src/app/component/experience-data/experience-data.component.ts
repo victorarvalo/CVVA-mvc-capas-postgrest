@@ -23,13 +23,13 @@ export class ExperienceDataComponent implements OnInit{
           var sfinishedDate: string[] = element.finishDate.split("/");
           var finishedDate: String = new Date(parseInt(sfinishedDate[2]),parseInt(sfinishedDate[1]),parseInt(sfinishedDate[0]))
           .toLocaleDateString('es-co',{year:'numeric',month:'long'});
-          element.finishDate = finishedDate.toString();
+          element.finishDate = finishedDate.toString().toUpperCase();
         }
         if(element.startDate != null){
           var sstartDate: string[] = element.startDate.split("/");
           var startedDate: String = new Date(parseInt(sstartDate[2]),parseInt(sstartDate[1]),parseInt(sstartDate[0]))
           .toLocaleDateString('es-co',{year:'numeric',month:'long'});
-          element.startDate = startedDate.toString();
+          element.startDate = startedDate.toString().toUpperCase();
         }
       })
       this.listExperienceData = data;
@@ -40,4 +40,11 @@ export class ExperienceDataComponent implements OnInit{
     })
   }
 
+  backgroundColor(index: number){
+    if((index % 2) == 0){
+      return {'background-color': 'lightgrey'};
+    }else{
+      return {'background-color':'lightblue'};
+    }
+  }
 }

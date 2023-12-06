@@ -7,36 +7,36 @@
             <table class="table">
                 <tbody>
                     <tr>
-                        <td class="odd">Nombre: </td>
-                        <td class="text-start odd">{{data.name}} {{data.lastName}}</td>
+                        <td [ngStyle]="backGroundClass(true)">Nombre: </td>
+                        <td class="text-start" [ngStyle]="backGroundClass(true)">{{data.name}} {{data.lastName}}</td>
                     </tr>
                     <tr>
-                        <td class="even">Edad: </td>
-                        <td class="text-start even">{{data.age}}</td>
+                        <td [ngStyle]="backGroundClass(false)">Edad: </td>
+                        <td class="text-start" [ngStyle]="backGroundClass(false)">{{data.age}}</td>
                     </tr>
                     <tr>
-                        <td class="odd">Fecha de Nacimiento: </td>
-                        <td class="text-start odd">{{data.bornDate}}</td>
+                        <td [ngStyle]="backGroundClass(true)">Fecha de Nacimiento: </td>
+                        <td class="text-start" [ngStyle]="backGroundClass(true)">{{data.bornDate}}</td>
                     </tr>
                     <tr>
-                        <td class="even">Lugar de Nacimiento: </td>
-                        <td class="text-start even">{{data.bornPlace}}</td>
+                        <td [ngStyle]="backGroundClass(false)">Lugar de Nacimiento: </td>
+                        <td class="text-start" [ngStyle]="backGroundClass(false)">{{data.bornPlace}}</td>
                     </tr>
                     <tr>
-                        <td class="odd">Documento de Identidad: </td>
-                        <td class="text-start odd">{{data.idDocument}}</td>
+                        <td [ngStyle]="backGroundClass(true)">Documento de Identidad: </td>
+                        <td class="text-start" [ngStyle]="backGroundClass(true)">{{data.idDocument}}</td>
                     </tr>
                     <tr>
-                        <td class="even">Dirección: </td>
-                        <td class="text-start even">{{data.address}}</td>
+                        <td [ngStyle]="backGroundClass(false)">Dirección: </td>
+                        <td class="text-start" [ngStyle]="backGroundClass(false)">{{data.address}}</td>
                     </tr>
                     <tr>
-                        <td class="odd">Teléfono: </td>
-                        <td class="text-start odd">{{data.celPhone}}</td>
+                        <td [ngStyle]="backGroundClass(true)">Teléfono: </td>
+                        <td class="text-start" [ngStyle]="backGroundClass(true)">{{data.celPhone}}</td>
                     </tr>
                     <tr *ngFor="let mail of data.email;index as i" style="margin-bottom: 0%;padding: 0%;">
-                        <td class="even">Email{{i + 1}}: </td>
-                        <td class="text-start even">{{mail}}</td>
+                        <td [ngStyle]="backGroundClass(false)">Email{{i + 1}}: </td>
+                        <td class="text-start" [ngStyle]="backGroundClass(false)">{{mail}}</td>
                     </tr>
                 </tbody>
             </table>                    

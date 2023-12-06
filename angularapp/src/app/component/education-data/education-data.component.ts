@@ -31,4 +31,16 @@ export class EducationDataComponent implements OnInit{
     })
   }
 
+  backgroundColor(index: number){
+    if((index % 2) == 0){
+      return {'background-color': 'lightgrey',
+              'magin-bottom':'0%',
+              'padding':'0%'};
+    }else{
+      return {'background-color':'lightblue',
+              'magin-bottom':'0%',
+              'padding':'0%'};
+    }
+  }
+
 }

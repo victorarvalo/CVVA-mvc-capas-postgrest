@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, numberAttribute } from '@angular/core';
 import { PersonalDataServiceService } from '../../Services/PersonalData/personal-data.service.service'
 
 @Component({
@@ -25,5 +25,12 @@ export class PersonalDataComponent implements OnInit{
     );
   }
 
+  backGroundClass(odd: boolean){
+    if(odd){
+      return {'background-color': 'lightgrey'};
+    }else{
+      return {'background-color':'lightblue'};
+    }
+  }
 
 }

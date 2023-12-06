@@ -12,6 +12,6 @@ export class NavComponent implements OnInit{
 
   }
   ngOnInit(): void {
-    this._registry.loadSvg("/assets/imgVA.svg","vic");
+    this._registry.loadSvg("/assets/imgVictorSVGsvg.svg","vic");
   }
 }

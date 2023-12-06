@@ -22,4 +22,11 @@ export class SummaryComponent implements OnInit{
       console.log(error);
     })
   }
+  backgroundColor(index: number){
+    if((index % 2) == 0){
+      return {'background-color': 'lightgrey'};
+    }else{
+      return {'background-color':'lightblue'};
+    }
+  }
 }
