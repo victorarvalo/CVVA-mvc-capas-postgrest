@@ -18,8 +18,9 @@ export class EducationDataComponent implements OnInit{
       data.forEach(element => {
         if(element.finishDate != null){
           var sfinishedDate: string[] = element.finishDate.split("/");
-          var finishedDate: Date = new Date(parseInt(sfinishedDate[2]),parseInt(sfinishedDate[1]),parseInt(sfinishedDate[0]));
-          element.finishDate = finishedDate.getFullYear();
+          var finishedDate: String = new Date(parseInt(sfinishedDate[2]),parseInt(sfinishedDate[1]),parseInt(sfinishedDate[0]))
+          .toLocaleDateString('en-us',{year:'numeric'});
+          element.finishDate = finishedDate.toString();
         }
       });
       this.listEducationData = data;
