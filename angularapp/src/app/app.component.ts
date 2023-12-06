@@ -1,31 +1,19 @@
-import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
-import { SvgIconRegistryService } from 'angular-svg-icon';
+import { Component, NgModule } from '@angular/core';
 
-@Component({
+ @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-})
-export class AppComponent {
-  public forecasts?: WeatherForecast[];
+}) 
 
-  constructor(http: HttpClient, private _registry: SvgIconRegistryService) {
-    http.get<WeatherForecast[]>('/weatherforecast').subscribe(result => {
-      this.forecasts = result;
-    }, error => console.error(error));
+export class AppComponent {
+
+  constructor() {    
   }
 
   title = 'angularapp';
 
   ngOnInit(){
-    this._registry.loadSvg("/assets/imgVA.svg","vic");
+    
   }
-}
-
-interface WeatherForecast {
-  date: string;
-  temperatureC: number;
-  temperatureF: number;
-  summary: string;
 }
