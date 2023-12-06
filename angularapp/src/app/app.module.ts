@@ -10,6 +10,7 @@ import { SummaryComponent } from './component/summary/summary.component';
 import { EducationDataComponent } from './component/education-data/education-data.component';
 import { ExperienceDataComponent } from './component/experience-data/experience-data.component';
 import { PersonalReferenceDataComponent } from './component/personal-reference-data/personal-reference-data.component';
+import { NavComponent } from './component/nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { PersonalReferenceDataComponent } from './component/personal-reference-d
     SummaryComponent,
     EducationDataComponent,
     ExperienceDataComponent,
-    PersonalReferenceDataComponent
+    PersonalReferenceDataComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule, HttpClientModule, AppRoutingModule, AngularSvgIconModule.forRoot() 
